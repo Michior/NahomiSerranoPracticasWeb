@@ -1,0 +1,67 @@
+body{
+    background-image: url("https://i.pinimg.com/564x/2f/91/f7/2f91f7146bfc8cd20aeea144c4591b9e.jpg"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family:'Times New Roman', Times, serif;
+    color:black; 
+    line-height: 1.6;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+div{
+    text-align: justify;
+
+}
+
+h1,h2{
+    text-align: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+h1{
+    font-size: 60px;
+}
+
+p, table{
+    font-size: large;
+    
+}
+
+td{
+    font-weight: bold;
+}
+
+.Fast-image{
+    width: 70%; 
+    max-width: 500px; 
+    height: auto;
+    display: block; 
+    margin: 0 auto; 
+}
+
+.pelis-table{
+    width: 90%;
+    margin: 20px auto; /*Centrando la tabla y añadiendo margen superior e inferior*/
+    border-collapse: collapse;
+}
+
+.pelis-table th, .pelis-table td{
+    border: 2px solid #ddd; /*Bordes suaves y grises*/
+    padding: 10px; /*Aumentar espacio entre el contenido de la celda*/
+    text-align: center;
+}
+
+.pelis-table th{
+    background-color: #303f49ec; /*Fondo azul claro para encabezados*/
+    color: white; /*Texto blanco para contraste*/
+    font-weight: bold;
+}
+
+.pequeñas{
+    width: 50%; 
+    max-width: 200px; 
+    height: auto;
+    display: block; 
+    margin: 0 auto;
+}
