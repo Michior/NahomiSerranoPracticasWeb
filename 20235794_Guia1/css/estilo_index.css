@@ -4,7 +4,6 @@ h1{
 
 ol, h2{
     text-align: justify;
-    margin: 10px 30px;
     font-size: 20px;
     font-family: "Baskervville SC", serif;
     font-weight: 400;
@@ -15,12 +14,24 @@ h2{
     font-weight: bold;
 }
 
-body{
-    background-image: url("https://i.pinimg.com/564x/03/28/20/0328202cb32462eb68f8681fec9996b3.jpg"); 
-    background-repeat: no-repeat;
-    background-size: cover;
-    
+header{
+    background: rgb(29,44,64);
+    background: linear-gradient(90deg, rgba(29,44,64,1) 0%, rgba(61,84,115,1) 50%, rgba(101,129,166,1) 100%);
+    width: 97.2%;
+    color: black;
+    font-weight: bold;
+    padding: 14px 16px;
+    text-align: center;
 }
+
+body{
+    background-color: #6581A6;
+}
+
+section{
+    margin: 30px 110px;
+}
+
 
 p{
     text-align: center;
@@ -28,3 +39,6 @@ p{
     font-size: 20px;
 }
 
+div{
+    margin: 40px 150px;
+}
