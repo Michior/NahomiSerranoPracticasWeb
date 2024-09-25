@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Bolsa de trabajo ESEN</title>
+	<link href="./css/estilo.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="./css/estilo_logueo.css">
+</head>
+<body>
+	<header>
+		<div class="envoltorio">
+			<div class="logo">
+				<a href="index.html"><img src="images/logo2.png" title="logo" height="42px" /></a>
+			</div>
+			<nav>
+				<ul> 
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="ofertas.html">Ofertas</a></li>
+					<li><a href="consejos.html">Consejos</a></li>
+					<li class="activo"><a href="aplicar.html">Aplicar</a></li>
+					<li><a href="#">Contacto</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<section>
+		<article class="ofertas">
+			<div class="envoltorio">
+				<div class="form">
+					<div class="header">
+					  <h2>Aplicar</h2>
+					</div>
+					<div class="login">
+					  <form action="aplicar.php" method="post">
+						<ul>
+						  <li>
+							<span class="un"><i class="fa fa-user"></i></span
+							><input
+							  type="text"
+							  required
+							  class="text"
+							  placeholder="Nombre de usuario"
+							/>
+						  </li>
+						  <li>
+							<span class="un"><i class="fa fa-lastname"></i></span
+							><input
+							  type="text"
+							  required
+							  class="text"
+							  placeholder="Apellidos"
+							/>
+						  </li>
+						  <li>
+							<span class="departamento-label"></span>
+							Departamento de residencia:
+								<select name="departamento_residencia" class="departamento-select">
+								  <option value="">Selecciona un departamento</option>
+								  <option value="Ahuachapán">Ahuachapán</option>
+								  <option value="Cabañas">Cabañas</option>
+								  <option value="Chalatenango">Chalatenango</option>
+								  <option value="Cuscatlán">Cuscatlán</option>
+								  <option value="La Libertad">La Libertad</option>
+								  <option value="La Paz">La Paz</option>
+								  <option value="La Unión">La Unión</option>
+								  <option value="Morazán">Morazán</option>
+								  <option value="San Miguel">San Miguel</option>
+								  <option value="San Salvador">San Salvador</option>
+								  <option value="San Vicente">San Vicente</option>
+								  <option value="Santa Ana">Santa Ana</option>
+								  <option value="Sonsonate">Sonsonate</option>
+								  <option value="Usulután">Usulután</option>
+								</select>
+								</span>
+						  </li>
+						  <li>
+							<span class="un"><i class="fa fa-age"></i></span
+								><input
+								  type="number"
+								  min="18" 
+								  max="50"
+								  required
+								  class="text"
+								  placeholder="Edad"
+								/>
+						  </li>
+						  <li>
+							<span class="un"><i class="fa fa-user"></i></span
+							><input
+							  type="tel"
+							  required
+							  class="text"
+							  pattern="^[0-9]{4}-?[0-9]{4}$"
+							  title="Solo se acepta números en el siguiente formato 2222-2222"
+							  placeholder="Número de telefono"
+							/>
+						  </li>
+						  <li>
+							<span class="departamento-label"></span>
+							Carrera universitaria:
+								<select name="carrera" class="carrera-select">
+								  <option value="">Selecciona una carrera</option>
+								  <option value="Software">Ingeniería de Software y Negocios Digitales</option>
+								  <option value="Negocios">Ingeniería de Negocios</option>
+								  <option value="Economia">Licenciatura en Economía y Negocios</option>
+								  <option value="Derecho">Licenciatura en Ciencias Jurídicas</option>
+								</select>
+								</span>
+						  </li>
+						  <li>
+							<span class="un"><i class="fa fa-salario"></i></span
+								><input
+								  type="number"
+								  required
+								  class="text"
+								  title="Solo se acepta números en el siguiente formato 2222-2222"
+								  placeholder="Pretención salarial"
+								/>
+						  </li>
+						  <li>
+							<input type="submit" value="Aplicar" class="btn" />
+						  </li>
+							</div>
+						  </li>
+						</ul>
+					  </form>
+			</div>
+		</article>
+	</section>
+	<footer>
+		<p>Creado por: Nahomi Michelle Serrano Ortiz 20235894</p>
+	</footer>
+</body>
+</html>

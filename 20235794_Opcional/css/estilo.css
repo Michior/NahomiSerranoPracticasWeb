@@ -1,0 +1,202 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	
+}
+
+.envoltorio{
+	overflow: hidden;
+	width:80%;
+	margin:0 auto;
+}
+
+/*Da estilo al navegador (nav)*/
+header{
+	width: 97.5%;
+    height: 70px;
+    background-color: #323A45;
+    color: black;
+    position: sticky;
+    top:0;
+    left: 0;
+    z-index: 10;
+    padding-left: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .envoltorio{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header nav ul{
+	list-style-type: none;
+	display: flex;
+	margin: 0;
+}
+
+header nav ul li{
+	padding: 0 15px;
+}
+
+nav>ul{
+    background-color:  #323A45;
+    width: 100%;
+    overflow: hidden;
+}
+
+nav>ul>li{
+    float: left;
+}
+
+nav>ul>li>ul{
+    position: absolute;
+    display: none;
+}
+
+nav>ul>li:hover ul{
+    display: block;
+}
+
+nav a:hover{
+    background-color:  #12488c;
+}
+
+nav>ul>li>ul>li{
+    background-color:  #323A45;
+}
+
+header nav a{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding: 23px 10px;
+	text-transform: uppercase;
+    font-size: 14px;
+}
+
+/*Imagen del fondo de pantalla*/
+.contenedor-slider img{
+    width: 100%;
+}
+
+/*Estilo de la clase intro*/
+.intro {
+    background-color: #003b70;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.intro h1 a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+
+.intro .boton {
+    background-color: #00315e;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 20px; 
+    display: inline-block;
+}
+
+.intro .boton:hover {
+    background-color: #00325e;
+}
+
+.intro .envoltorio p{
+    text-align: justify;
+    margin: 10px;
+    font-size: 14px;
+}
+
+/*estilos de la clase servicio*/
+.servicios .envoltorio {
+    display: flex;
+    justify-content: space-between;
+}
+
+.grid{
+    width: 40%;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border: 1px silver solid;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 40px 20px;
+    margin: 20px 0.5%;
+}
+
+.grid h3{
+    color: #00315e;
+    margin: 20px 0 10px 0;
+}
+
+.grid .botoncito{
+    background-color: #003b70;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.grid img{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.grid p{
+    text-align: justify;
+    padding: 10px 15px;
+    color: #adabab;
+    font-size: small;
+}
+
+.grid .botoncito:hover {
+    background-color: #00509d;
+}
+
+/*Estilo del testimonio*/
+.testimonios {
+    background-color: #edeae6;
+    padding: 40px 20px;
+}
+
+.testimonios-grid h3 {
+    color: #003b70;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.testimonios-grid p {
+    color: #989797;
+    font-size: small;
+    padding-bottom: 20px;
+}
+
+.testimonios-grid b {
+    color: #333;
+}
+
+/*Estilo de pie de página*/
+footer {
+    background-color: #323a45;
+    color: white;
+    padding: 20px;
+}

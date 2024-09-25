@@ -1,0 +1,41 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	
+}
+
+table{
+    border: 1px solid black;
+    width: 80%;
+    margin: 34px auto;
+    border-collapse: collapse;
+}
+
+th, td{
+    border: 1px solid black;
+    padding: 10px 10px;
+    margin: 20px;
+}
+
+thead{
+    background-color: black;
+    font-weight: bold;
+    color: white;
+}
+
+tbody tr:nth-child(2n+1){
+    background-color: #cccccc;
+}
+
+.botoncito {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+}
