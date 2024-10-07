@@ -140,7 +140,7 @@ footer p{
 
 #foda th {
     background-color: var(--fondo);
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 #foda tr{
@@ -148,11 +148,11 @@ footer p{
 }
 
 .fortalezas h3, .debilidades h3 {
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 .oportunidades h3, .amenazas h3 {
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 .fortalezas ul, .debilidades ul {
