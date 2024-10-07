@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/logueo.css" />
+    <title>Ejemplo de formulario de logueo</title>
+  </head>
+  <body>
+    <div class="form">
+      <div class="header">
+        <h2>Inicio de sesión</h2>
+      </div>
+      <div class="login">
+        <form action="prueba.php">
+          <ul>
+            <li>
+              <span class="un"><i class="fa fa-user"></i></span
+              ><input
+                type="text"
+                required
+                class="text"
+                placeholder="Nombre de usuario"
+              />
+            </li>
+            <li>
+              <span class="un"><i class="fa fa-lock"></i></span
+              ><input
+                type="password"
+                required
+                class="text"
+                placeholder="Contraseña"
+              />
+            </li>
+            <li>
+              <input type="submit" value="Iniciar sesion" class="btn" />
+            </li>
+            <li>
+              <div class="span">
+                <span class="ch"
+                  ><input type="checkbox" id="r" /><label for="r"
+                    >Recordarme</label
+                  ></span
+                ><span class="ch"
+                  ><a href="#">¿Has olvidado tu contraseña?</a></span
+                >
+              </div>
+            </li>
+          </ul>
+        </form>
+        <div class="social">
+          <a href="#"
+            ><div class="fb">
+              <i class="fa fa-facebook-f"></i>&nbsp; Loguearme con Facebook
+            </div></a
+          >
+          <a href="#"
+            ><div class="tw">
+              <i class="fa fa-twitter"></i>&nbsp; Loguearme con Twitter
+            </div></a
+          >
+        </div>
+      </div>
+      <br />
+      <div class="sign">
+        <div class="cuenta">¿No tienes cuenta?</div>
+        <div class="reg"><a href="#">Registrate</a></div>
+      </div>
+    </div>
+  </body>
+</html>
