@@ -94,7 +94,7 @@ footer p{
 }
 
 #info h2, p{
-    padding-top: 20px;
+    padding: 20px;
 }
 
 /*Estilos de la seccion de contendio o ejercicios*/
@@ -102,6 +102,12 @@ footer p{
     width: 90%;
     padding: 0px 20px;
 } 
+
+#contenido .guia{
+    border: solid #2D2A29 2px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
 
 #contenido h2, ol{
     padding: 10px 0;
