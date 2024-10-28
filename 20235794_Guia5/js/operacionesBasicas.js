@@ -7,7 +7,7 @@ const btnSumar = document.querySelector("#idBtnSumar");
 const btnRestar = document.querySelector("#idBtnRestar");
 const btnMultiplicar = document.querySelector("#idBtnMultiplicar");
 const btnDividir = document.querySelector("#idBtnDividir");
-
+ 
 //Agregamos el evento click a los botones, adicionalmente
 //se le asigna la funcion que realiza la operacion 
 btnSumar.addEventListener("click",  sumar);
