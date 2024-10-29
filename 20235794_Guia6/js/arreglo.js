@@ -25,9 +25,9 @@ function agregarElemento(){
         arreglo.push(numero);
 
         //utilizamos la api dom para crear un elemento html
-        let caja = document.querySelector("div"); //creamos un elemnto div
+        let caja = document.createElement("div"); //creamos un elemnto div
         caja.className = "col-md-1 colum"; //agregamos una clase al elemento div
-        let valor = document.querySelector("h3"); //creamos un elemento h3
+        let valor = document.createElement("h3"); //creamos un elemento h3
         valor.textContent = numero; //agregamos texto al h3
         caja.appendChild(valor); //le pasamos como hijo la etiqueta h3 a nuestro div
 
