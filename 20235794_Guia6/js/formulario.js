@@ -118,7 +118,7 @@ function imprimirFilas(){
 }
 
 const imprimirPacientes = () => {
-    let $table = `<div class ="table responsive">
+    let $table = `<div class ="table-responsive">
                     <table class ="table table-striped table-hover table-bordered">
                         <tr>
                             <th scope ="col" class= "text-center" style= "width: 5%">#</th>
@@ -136,3 +136,56 @@ const imprimirPacientes = () => {
             `;
     document.getElementById("idTablaPacientes").innerHTML = $table;
 };
+
+//Contador global de las option correspondiente
+//al select (cmb) pais
+let contadorGlobalOption = cmbPais.children.length;
+const addPais = () => {
+    let paisNew = inputNombrePais.value;
+
+    if(paisNew != ""){
+        //Creando nuevo option con la API DOM
+        let option = document.createElement("option");
+        option.textContent = paisNew;
+        option.value = contadorGlobalOption + 1;
+
+        //agregando el nuevo option en el select
+        cmbPais.appendChild(option);
+
+        //asignando un mensaje a nuestra notificacion
+        mensaje.innerHTML = "Pais agregado correctamente";
+        //llamnado al componenete de bootstrap
+        toast.show();
+    } else {
+        //asignando un mensaje a nuestra notificacion
+        mensaje.innerHTML = "Faltan campos por completar";
+        //llamando al componente de bootstrap
+        toast.show();
+    }
+};
+
+//Agregando eventos a los botones y utilizando funciones tipo flecha
+buttonLimpiarPaciente.onclick = () => {
+    limpiarForm();
+};
+
+buttonAgregarPaciente.onclick = () => {
+    addPaciente();
+};
+
+buttonMostrarPaciente.onclick = () => {
+    imprimirPacientes();
+};
+
+buttonAgregarPais.onclick = () => {
+    addPais();
+};
+
+//Se agrega el focus en el campo nombre pais del modal
+idModal.addEventListener("show.bs.modal", () => {
+    inputNombrePais.value = "";
+    inputNombrePais.focus();
+});
+
+//ejecutar funcion al momento de cargar la pagina html
+limpiarForm();
