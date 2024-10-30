@@ -20,21 +20,24 @@ document.addEventListener("DOMContentLoaded", function(){
     function addEstudiantes(){
         const inputCarnet = document
         .querySelector("#inputCarnet")
-        .value.toString()
+        .value.toString().trim()
         .toUpperCase();
         const inputNombre = document
         .querySelector("#inputNombre")
-        .value.toString()
+        .value.toString().trim()
         .toUpperCase();
         const inputApellidos = document
         .querySelector("#inputApellidos")
-        .value.toString()
+        .value.toString().trim()
         .toUpperCase();
 
     if (inputCarnet != "" && inputNombre != "" && inputApellidos != ""){
-        arrayEstudiantes.push(
-            new Array(inputCarnet, inputNombre, inputApellidos)
-        );
+        const estudiante = {
+            carnet: inputCarnet,
+            nombre: inputNombre,
+            apellidos: inputApellidos,
+        }
+        arrayEstudiantes.push(estudiante);
         alert("Se registro el nuevo estudiante");
         //limpiando campos del formulario
         document.querySelector("#inputCarnet").value = "";
@@ -61,18 +64,17 @@ document.addEventListener("DOMContentLoaded", function(){
             table += "</tr>";
             table += "</thead>";
             table += "<tbody>";
+            
+            let i = 0;
 
-            //Utilizaremos un bucle for para recorrer el arreglo de estudiantes
-            for (let i = 0; i < arrayEstudiantes.length; i++){
-                //Accediendo a las posiciones del arreglo
-                carnet = arrayEstudiantes[i][0];
-                nombres = arrayEstudiantes[i][1];
-                apellidos = arrayEstudiantes[i][2];
+            for (const estudiante of arrayEstudiantes){
+                i++;
+                let {carnet, nombre, apellidos} = estudiante;
 
                 table += `<tr>`;
-                table += `<td scope='row' style='font-weight: bold;'>${i + 1}</td>`;
+                table += `<td scope='row' style='font-weight: bold;'>${i}</td>`;
                 table += `<td>${carnet}</td>`;
-                table += `<td>${nombres}</td>`;
+                table += `<td>${nombre}</td>`;
                 table += `<td>${apellidos}</td>`;
                 table += `</tr>`;
             }

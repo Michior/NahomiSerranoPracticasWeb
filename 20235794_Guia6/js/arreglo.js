@@ -39,9 +39,10 @@ function agregarElemento(){
 }
 
 function ordenarElementos(){
+    containerArregloOrdenado.innerHTML ="<h3>Arreglo ordenado</h3>";
     //utilizaremos un for..of para recorrer el arreglo
     //a su vez se utilziara .sort para ordenarlo
-    for (let i of arreglo.sort()){
+    for (let i of arreglo.sort((a,b)=>a-b)){
         let caja = document.createElement("div");
         caja.className ="col-md-1 colum-green";
         let valor = document.createElement("h3");

@@ -34,11 +34,15 @@ function generarEstudiantes(){
             convertir = parseFloat(calificacion);
         } while (isNaN(convertir) || convertir < 0 || convertir >10);
 
+        arrayEstudiante.push(new Array(estudiante,parseFloat(calificacion)));
+
+        /*
         //Asignando los valores al arreglo
         arrayEstudiante[contador - 1] = new Array(
             estudiante,
-            parseFloat(calificacion).toFixed(2)
-        );
+            //parseFloat(calificacion).toFixed(2)
+            parseFloat(calificacion)
+        );*/
         contador++;
     }
 
@@ -51,16 +55,17 @@ function generarEstudiantes(){
 
     let listado = "<h3>Listado de estudiantes registrados</h3>";
     listado += "<ol>";
-    for (let indice of arrayEstudiante){
-        let nombre = indice[0];
-        let nota = indice[1];
+    for (let estudiante of arrayEstudiante){
+        let nombre = estudiante[0];
+        let nota = estudiante[1];
 
         //imprimiendo lista de estudiantes
         listado += `<li><b>Nombre:</b> ${nombre} - <b>Calificación:</b> ${nota}</li>`;
 
         //verificacion de la calificacion mas alta
         if (nota > calificacionAlta){
-            posición = indice;
+            posición = estudiante;
+            calificacionAlta=nota;
             }
 
         //calculando el promedio

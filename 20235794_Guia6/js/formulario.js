@@ -120,7 +120,7 @@ function imprimirFilas(){
 const imprimirPacientes = () => {
     let $table = `<div class ="table-responsive">
                     <table class ="table table-striped table-hover table-bordered">
-                        <tr>
+                        <tr> 
                             <th scope ="col" class= "text-center" style= "width: 5%">#</th>
                             <th scope ="col" class= "text-center" style= "width: 15%">Nombre</th>
                             <th scope ="col" class= "text-center" style= "width: 15%">Apellido</th>
