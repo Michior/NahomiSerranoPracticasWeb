@@ -4,7 +4,7 @@ const inputApellido = document.getElementById("idTxtApellido");
 const inputFechaNacimiento = document.getElementById("idTxtFechaNacimiento");
 const inputRdMasculino = document.getElementById("idRdMasculino");
 const inputRdFemenino = document.getElementById("idRdFemenino");
-const cmbPais = document.getElementById("idCmbPais");
+const cmbPais = document.getElementById("idCmdPais");
 const inputDireccion = document.getElementById("idTxtDireccion");
 const inputNombrePais = document.getElementById("idNombrePais");
 
